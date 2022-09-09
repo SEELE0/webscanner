@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="scanner" extends="struts-default" namespace="/">
+		<action name="test" class="com.dhee.action.TestAction" method="test">
+			<result>login.jsp</result>
+		</action>
+		<action name="scan" class="com.dhee.action.SpiderAction" method="scan">
+			<result>index.jsp</result>
+		</action>
+		<action name="login" class="com.dhee.action.UserAction" method="login">
+			<result>net.jsp</result>
+			<result name="error">login.jsp</result> 
+<!--			<result name="admin">admin.jsp</result> -->
+		</action>
+		<action name="logout" class="com.dhee.action.UserAction" method="logout">
+			<result>login.jsp</result>
+		</action>
+		<action name="registe" class="com.dhee.action.UserAction" method="registe">
+			<result>login.jsp</result>
+			<result name="error">reg.jsp</result>
+		</action>
+		<action name="sqlInjection" class="com.dhee.action.InjectAction" method="inject">
+			<result>sql.jsp</result>
+		</action>
+		<action name="getUrl" class="com.dhee.action.UrlAction" method="getUrl">
+			<result>url.jsp</result>
+		</action>
+		<action name="delUrl" class="com.dhee.action.UrlAction" method="delUrl">
+			<result>url.jsp</result>
+		</action>
+		<action name="getFile" class="com.dhee.action.UrlAction" method="getFile">
+			<result>url.jsp</result>
+		</action>
+		<action name="xss" class="com.dhee.action.XssAction" method="xss">
+				<result>xss.jsp</result>
+		</action>
+	</package>
+
+</struts>    

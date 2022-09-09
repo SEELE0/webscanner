@@ -1,0 +1,11 @@
+检测报告
+检测内容如下:
+https://blog.csdn.net/qq_35729592/article/details/72764626，该URL SQL注入结果为:2
+http://192.168.86.137/Less-1，该URL SQL注入结果为:1
+http://192.168.86.137/Less-1，该URL SQL注入结果为:1
+http://192.168.86.137/Less-1/，该URL SQL注入结果为:2
+http://192.168.86.137/Less-2/，该URL SQL注入结果为:2
+http://192.168.86.137/Less-1，该URL SQL注入结果为:1
+http://192.168.86.137/Less-1，该URL SQL注入结果为:1
+1:代表存在注入点，2:代表不存在注入点
+本次共检测7个URL地址。
